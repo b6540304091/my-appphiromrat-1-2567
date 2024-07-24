@@ -4,7 +4,7 @@ export default function () {
   return (
     <div>
       <div className="flex justify-center ">
-        <div className="self-center top-0 w-full max-w-7xl shadow-lg p-3 mb-5 bg-body rounded">
+        <div className="self-center top-0 w-full max-w-7xl shadow-lg p-3 mb-5 bg-body rounded bg-pink-200">
           <div className="flex justify-between items-center text-gray-700">
             <div className="mx-2 my-4 ">
               <ion-icon
@@ -35,10 +35,10 @@ export default function () {
                 <a href="/evaluation">การประเมินนโยบายสาธารณะ</a>
               </li>
               <li className="text-stone-600 hover:text-blue-600 hover:font-bold font-medium mx-4 my-1">
-                <a href="#">ติดต่อ</a>
+                <a href="/contact">ติดต่อ</a>
               </li>
-              <li className="text-blue-600 hover:text-white hover:bg-blue-600 mx-4 my-1 border-2 border-blue-600 px-2 rounded-2xl ">
-                <a href="#">LogIn</a>
+              <li className="text-white-600 hover:text-blue hover:bg-white-600 mx-4 my-1 border-2 border-black-600 px-2 rounded-2xl ">
+                <a href="/signin">LogIn</a>
               </li>
               <li className="text-white bg-blue-600 px-2 rounded-2xl mx-4 my-1 hover:bg-white hover:text-blue-600 hover:border-2 hover:border-blue-600">
                 <a href="#">SignUp</a>
