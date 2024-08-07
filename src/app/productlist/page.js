@@ -1,11 +1,10 @@
 import React from "react";
-import AI from "../../components/AI";
+import ProductsList from "../../components/ProductsList";
 
 export default function page() {
   return (
     <div>
-      page
-      <AI />
+      <ProductsList />
     </div>
   );
 }
