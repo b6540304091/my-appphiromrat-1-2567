@@ -75,7 +75,7 @@ export default async function ProductsList() {
                     </div>
                   </div>
                 </td>
-                <td>{element.price}</td>
+                <td>฿{element.price}</td>
                 <td>{element.category}</td>
                 <th>
                   <Link href={`/editProduct/${element._id}`}>
