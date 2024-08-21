@@ -6,9 +6,17 @@ import { useRouter } from "next/navigation";
 
 export default function AddProduct() {
   const [name, setName] = useState("");
-  const [image, setImage] = useState("");
-  const [price, setPrice] = useState("");
-  const [category, setCategory] = useState("");
+  const [project, setProject] = useState("");
+  const [imprementation, setImprementation] = useState("");
+  const [email, setEmail] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [budget, setBudget] = useState("");
+  const [year, setYear] = useState("");
+  const [evaluation, setEvaluation] = useState("");
+  const [weak, setWeak] = useState("");
+  const [strength, setStrength] = useState("");
+  const [development, setDevelopment] = useState("");
+  const [suggestion, setSuggestion] = useState("");
 
   const router = useRouter();
 
@@ -60,10 +68,9 @@ export default function AddProduct() {
       value={name}
       className="input input-bordered input-accent w-full max-w-xs"
       type="text"
-      placeholder="Product Name"
+      placeholder="ยุทธศาสตร์ชาติ"
     />
-        
-    </div>
+     </div>
   </div>
   <div className="sm:col-span-3">
     <label
@@ -74,8 +81,8 @@ export default function AddProduct() {
     </label>
     <div className="mt-2">
     <input
-          onChange={(e) => setImage(e.target.value)}
-          value={image}
+          onChange={(e) => setProject(e.target.value)}
+          value={project}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
           placeholder="/images/1.jpg"
@@ -93,12 +100,11 @@ export default function AddProduct() {
     </label>
     <div className="mt-2">
     <input
-          onChange={(e) => setPrice(e.target.value)}
-          value={price}
+          onChange={(e) => setImprementation(e.target.value)}
+          value={imprementation}
           className="input input-bordered input-accent w-full max-w-xs"
-          type="number"
-          placeholder="1"
-          defaultValue="1"
+          type="text"
+          placeholder="หน่วยงานที่นำนโยบายไปปฏิบัติ"
         />
         
     </div>
@@ -112,11 +118,11 @@ export default function AddProduct() {
     </label>
     <div className="mt-2">
     <input
-          onChange={(e) => setCategory(e.target.value)}
-          value={category}
+          onChange={(e) => setEmail(e.target.value)}
+          value={email}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
-          placeholder="Product Category"
+          placeholder="อีเมล"
         />
       
         
@@ -131,11 +137,11 @@ export default function AddProduct() {
     </label>
     <div className="mt-2">
     <input
-          onChange={(e) => setCategory(e.target.value)}
-          value={category}
+          onChange={(e) => setMobile(e.target.value)}
+          value={mobile}
           className="input input-bordered input-accent w-full max-w-xs"
-          type="text"
-          placeholder="Product Category"
+          type="number"
+          placeholder="โทรศัพท์"
         />
       
         
@@ -150,11 +156,11 @@ export default function AddProduct() {
     </label>
     <div className="mt-2">
     <input
-          onChange={(e) => setCategory(e.target.value)}
-          value={category}
+          onChange={(e) => setBudget(e.target.value)}
+          value={budget}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
-          placeholder="Product Category"
+          placeholder="งบประมาณ"
         />
       
         
@@ -169,11 +175,11 @@ export default function AddProduct() {
     </label>
     <div className="mt-2">
     <input
-          onChange={(e) => setCategory(e.target.value)}
-          value={category}
+          onChange={(e) => setYear(e.target.value)}
+          value={year}
           className="input input-bordered input-accent w-full max-w-xs"
-          type="text"
-          placeholder="Product Category"
+          type="number"
+          placeholder="ปีงบประมาณ"
         />
       
         
@@ -188,29 +194,10 @@ export default function AddProduct() {
     </label>
     <div className="mt-2">
     <input
-          onChange={(e) => setCategory(e.target.value)}
-          value={category}
+          onChange={(e) => setEvaluation(e.target.value)}
+          value={evaluation}
           className="input input-bordered input-accent w-full max-w-xs"
-          type="text"
-          placeholder="Product Category"
-        />
-      
-        
-    </div>
-  </div>
-  <div className="sm:col-span-3">
-    <label
-      htmlFor="last-name"
-      className="block text-sm font-medium leading-6 text-gray-900"
-    >
-      จุดแข็ง
-    </label>
-    <div className="mt-2">
-    <input
-          onChange={(e) => setCategory(e.target.value)}
-          value={category}
-          className="input input-bordered input-accent w-full max-w-xs"
-          type="text"
+          type="float"
           placeholder="Product Category"
         />
       
@@ -226,11 +213,11 @@ export default function AddProduct() {
     </label>
     <div className="mt-2">
     <input
-          onChange={(e) => setCategory(e.target.value)}
-          value={category}
+          onChange={(e) => setWeak(e.target.value)}
+          value={weak}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
-          placeholder="Product Category"
+          placeholder="จุดอ่อน"
         />
       
         
@@ -241,12 +228,12 @@ export default function AddProduct() {
       htmlFor="last-name"
       className="block text-sm font-medium leading-6 text-gray-900"
     >
-      แนวทางเสริม (จุดแข็ง)
+      จุดแข็ง
     </label>
     <div className="mt-2">
     <input
-          onChange={(e) => setCategory(e.target.value)}
-          value={category}
+          onChange={(e) => setStrength(e.target.value)}
+          value={strength}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
           placeholder="Product Category"
@@ -255,6 +242,26 @@ export default function AddProduct() {
         
     </div>
   </div>
+ 
+  <div className="sm:col-span-3">
+    <label
+      htmlFor="last-name"
+      className="block text-sm font-medium leading-6 text-gray-900"
+    >
+      แนวทางเสริม (จุดแข็ง)
+    </label>
+    <div className="mt-2">
+    <input
+          onChange={(e) => setDevelopment(e.target.value)}
+          value={development}
+          className="input input-bordered input-accent w-full max-w-xs"
+          type="text"
+          placeholder="Product Category"
+        />
+      
+        
+    </div>
+  {/* </div>
   <div className="sm:col-span-3">
     <label
       htmlFor="last-name"
@@ -272,7 +279,7 @@ export default function AddProduct() {
         />
       
         
-    </div>
+    </div> */}
   </div>
   <div className="sm:col-span-3">
     <label
@@ -283,11 +290,11 @@ export default function AddProduct() {
     </label>
     <div className="mt-2">
     <input
-          onChange={(e) => setCategory(e.target.value)}
-          value={category}
+          onChange={(e) => setSuggestion(e.target.value)}
+          value={suggestion}
           className="input input-bordered input-accent w-full max-w-xs"
           type="text"
-          placeholder="Product Category"
+          placeholder="ข้อเสนอแนะ"
         />
       
         
@@ -300,10 +307,14 @@ export default function AddProduct() {
        
 
         
-       
-        <button type="submit" className="btn btn-primary w-full max-w-xs mx-20">
+       <div className="flex justify-center items-center mt-10">
+        <button
+        type="submit" 
+        className="btn btn-primary w-full max-w-xs ml-24">
           Add Product
+
         </button>
+        </div>
       </form>
     </>
   );
