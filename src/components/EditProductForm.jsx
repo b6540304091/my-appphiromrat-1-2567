@@ -174,7 +174,7 @@ export default function EditProductForm({
                 onChange={(e) => setNewBudget(e.target.value)}
                 value={newBudget}
                 className="input input-bordered input-accent w-full max-w-xs"
-                type="text"
+                type="number"
               />
             </div>
           </div>
@@ -191,7 +191,7 @@ export default function EditProductForm({
                 onChange={(e) => setNewYear(e.target.value)}
                 value={newYear}
                 className="input input-bordered input-accent w-full max-w-xs"
-                type="text"
+                type="number"
               />
             </div>
           </div>
@@ -208,7 +208,7 @@ export default function EditProductForm({
                 onChange={(e) => setNewEvaluation(e.target.value)}
                 value={newEvaluation}
                 className="input input-bordered input-accent w-full max-w-xs"
-                type="text"
+                type="number"
               />
             </div>
           </div>
@@ -221,7 +221,7 @@ export default function EditProductForm({
               จุดอ่อน
             </label>
             <div className="mt-2">
-              <input
+              <textarea
                 onChange={(e) => setNewStrength(e.target.value)}
                 value={newStrength}
                 className="input input-bordered input-accent w-full max-w-xs"
@@ -238,7 +238,7 @@ export default function EditProductForm({
               จุดแข็ง
             </label>
             <div className="mt-2">
-              <input
+              <textarea
                 onChange={(e) => setNewWeak(e.target.value)}
                 value={newWeak}
                 className="input input-bordered input-accent w-full max-w-xs"
@@ -255,7 +255,7 @@ export default function EditProductForm({
               จุดที่ควรพัฒนา
             </label>
             <div className="mt-2">
-              <input
+              <textarea
                 onChange={(e) => setNewDevelopment(e.target.value)}
                 value={newDevelopment}
                 className="input input-bordered input-accent w-full max-w-xs"
@@ -272,7 +272,7 @@ export default function EditProductForm({
               ข้อเสนอแนะ
             </label>
             <div className="mt-2">
-              <input
+              <textarea
                 onChange={(e) => setNewSuggestion(e.target.value)}
                 value={newSuggestion}
                 className="input input-bordered input-accent w-full max-w-xs"

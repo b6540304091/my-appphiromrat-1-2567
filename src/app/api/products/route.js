@@ -13,7 +13,7 @@ export async function POST(request) {
   const {
     name, 
     project, 
-    imprementation, 
+    implementation, 
     email, 
     mobile, 
     budget, 
@@ -28,7 +28,7 @@ export async function POST(request) {
   await Product.create({
   name, 
   project, 
-  imprementation, 
+  implementation, 
   email, 
   mobile, 
   budget, 

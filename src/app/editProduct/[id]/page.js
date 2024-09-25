@@ -23,7 +23,7 @@ export default async function EditProduct({ params }) {
   const {
      name,
      project, 
-     imprementation, 
+     implementation, 
      email, 
      mobile, 
      budget, 
@@ -41,7 +41,7 @@ export default async function EditProduct({ params }) {
       id={id}
       name={name}
      project = {project}
-     imprementation ={imprementation}
+     implementation ={implementation}
      email={email}
      mobile={mobile}
      budget={budget}

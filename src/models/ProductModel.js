@@ -5,8 +5,8 @@ const topicSchema = new Schema(
   {
     name: { type: String, required: true },
     project: { type: String, required: true },
-    Imprementation: { type: String, required: true },
-    Email: { type: String, required: true },
+    implementation: { type: String, required: true },
+    email: { type: String, required: true },
     mobile: { type: String, required: true },
     budget: { type: Number, required: true },
     year: { type: Number, required: true },
@@ -15,8 +15,6 @@ const topicSchema = new Schema(
     weak: { type: String, required: true },
     development: { type: String, required: true },
     suggestion: { type: String, required: true },
-
-    price: { type: Number, required: true },
   },
   {
     timestamps: true,
